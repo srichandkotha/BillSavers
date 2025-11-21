@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillSavers - Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>💰 BillSavers</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="bills.html">Bills</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="settings-section">
+            <h2>Settings</h2>
+            <p>Customize your BillSavers experience with these preferences.</p>
+
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>🌈 Theme</h3>
+                    <div class="form-group">
+                        <label for="theme-select">Select Theme:</label>
+                        <select id="theme-select">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="auto">Auto (System Default)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <h3>💴 Currency</h3>
+                    <div class="form-group">
+                        <label for="currency-select">Select Currency:</label>
+                        <select id="currency-select">
+                            <option value="USD">USD ($)</option>
+                            <option value="EUR">EUR (€)</option>
+                            <option value="GBP">GBP (£)</option>
+                            <option value="INR">INR (₹)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <h3>🔈️ Notifications</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="bill-reminders" checked>
+                            Enable Bill Reminders
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="savings-alerts" checked>
+                            Enable Savings Alerts
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <h3>📁 Data</h3>
+                    <button class="btn-secondary" id="export-data">Export Data</button>
+                    <button class="btn-secondary" id="clear-data">Clear All Data</button>
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button class="btn-primary" id="save-settings">Save Settings</button>
+                <button class="btn-secondary" id="reset-settings">Reset to Defaults</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BillSavers. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
