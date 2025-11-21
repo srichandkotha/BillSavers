@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillSavers - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>💰 BillSavers</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="bills.html">Bills</a></li>
+                <li><a href="savings.html">Savings</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="dashboard">
+            <h2>Welcome to BillSavers</h2>
+            <p>Manage your bills and track your savings goals efficiently.</p>
+
+            <div class="cards-container">
+                <div class="card">
+                    <h3>💵 Total Bills</h3>
+                    <p class="card-value" id="total-bills">$0.00</p>
+                    <p class="card-label">This Month</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎯 Savings Goal</h3>
+                    <p class="card-value" id="savings-goal">$0.00</p>
+                    <p class="card-label">Target</p>
+                </div>
+
+                <div class="card">
+                    <h3>💰 Current Savings</h3>
+                    <p class="card-value" id="current-savings">$0.00</p>
+                    <p class="card-label">Accumulated</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="progress-text">0%</p>
+                </div>
+            </div>
+
+            <section class="recent-bills">
+                <h3>Recent Bills</h3>
+                <div id="recent-bills-list" class="bills-list">
+                    <p class="empty-message">No bills yet. <a href="bills.html">Add your first bill</a></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BillSavers. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
